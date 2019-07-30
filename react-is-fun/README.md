@@ -69,3 +69,29 @@ To modify a state we need to use setState method and update the values needed.
         }))
 As setState is an asynchronous function using the Ex2 is preferred as the state gets maintained properly
     
+#retrieval of data
+fetch('url').then() => this is used for calling an api and get data
+
+#defaultProps
+When we do not get any data related to the props these values are taken
+
+Consider books is a property for a xml tag
+
+static defaultProps ={
+    books:{
+        title:'title', author:'srikar'
+    }
+}
+this code will be used by props when no value is avaiable for books
+
+//for functions default arguments syntax is used
+
+#propTypes
+prop-types is an NPM package which helps in defining properties to the data.
+
+Ex:
+Books.propTypes ={
+    title:propTypes.string,
+    author:propTypes.string,
+    pages: propTypes.number
+}

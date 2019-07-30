@@ -1,8 +1,6 @@
 import React from 'react';
 
-class Book extends React.Component {
-    render() {
-        const { title, author, pages } = this.props;
+const Book = ({ title, author, pages })=> {
         return (
             <section>
                 <h1>{title}</h1>
@@ -10,7 +8,6 @@ class Book extends React.Component {
                 <h6>{pages}</h6>
             </section>
         )
-    }
 }
 
 export default Book;
