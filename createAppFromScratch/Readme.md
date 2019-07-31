@@ -57,6 +57,10 @@ module.exports = {
 }
 
 #Step 8
+To run application we use webpack-dev-server
+`npm install webpack-dev-server`
+Now we can't see application running because there is no html file defined so we will create `index.html` file and set that in webpack
+We also add `context` option which helps to set the root directory position
 
 
 
